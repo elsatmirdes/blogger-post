@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='img/about-bg.jpg') }}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Me</h1>
+            <span class="subheading">Hakkımda Bilmenizi İstediğim Bilgiler</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <h3>Adım Elşat 17 yaşındayım ve bu siteyi kurmaya karar verdim insanlarla etkilişimli birşeyler yapmayı seviyorum<br/></h3>
+        <h3><br/>Umarım benim sevip yaptığım şeyi sizde beğenirsiniz<br/></h3>
+        <h3><br/>Kendi Postlarınızı Siteye Kaydolarak Paylaşa Bilirsiniz Güzel yayınlar görürüz umarım bilgilendirici ve ahlak kuralları içinde </h3>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  {% endblock %}
