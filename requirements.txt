@@ -5,6 +5,7 @@ chardet==3.0.4
 Click==7.0
 colorama==0.4.3
 dango==0.0.0
+deploy==1.9.1
 Flask==1.1.1
 Flask-Login==0.4.1
 Flask-Mail==0.9.1
