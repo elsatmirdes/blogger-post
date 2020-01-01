@@ -33,9 +33,6 @@
     <div class="container">
       <a class="navbar-brand" href="{{ url_for('index') }}">Ana Sayfa</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <html>
-        <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
         .sidenav {
@@ -82,18 +79,22 @@
           .sidenav a {font-size: 18px;}
         }
         </style>
-        </head>
-        <body>
 
         <div id="YanMenu" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
 
           &times;</a>
-
-          <a href="#">Anasayfa</a>
-          <a href="#">PHP</a>
-          <a href="#">HTML</a>
-          <a href="#">CSS</a>
+          {% if current_user.is_authenticated %}
+            <a href="">Post Ekle</a>
+            <a href="">LOGOUT</a>
+          {% else %}
+            <a href="#">Anasayfa</a>
+            <a href="#">HOME</a>
+            <a href="#">ABOUT</a>
+            <a href="#">İLETİŞİM</a>
+            <a href="">REGİSTER</a>
+            <a href="">LOGİN</a>
+          {% endif %}
         </div>
 
 
@@ -112,11 +113,6 @@
           document.getElementById("YanMenu").style.width = "0";
         }
         </script>
-
-        </body>
-        </html>
-
-        <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
