@@ -85,15 +85,15 @@
 
           &times;</a>
           {% if current_user.is_authenticated %}
-            <a href="">Post Ekle</a>
-            <a href="">LOGOUT</a>
+            <a href="https://blogger-post.herokuapp.com/post/new">Post Ekle</a>
+            <a href="{{ url_for('logout') }}">LOGOUT</a>
           {% else %}
-            <a href="#">Anasayfa</a>
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">İLETİŞİM</a>
-            <a href="">REGİSTER</a>
-            <a href="">LOGİN</a>
+            <a href="https://blogger-post.herokuapp.com/">Anasayfa</a>
+            <a href="https://blogger-post.herokuapp.com/">HOME</a>
+            <a href="https://blogger-post.herokuapp.com/about">ABOUT</a>
+            <a href="https://blogger-post.herokuapp.com/contact">İLETİŞİM</a>
+            <a href="https://blogger-post.herokuapp.com/register">REGİSTER</a>
+            <a href="https://blogger-post.herokuapp.com/login">LOGİN</a>
           {% endif %}
         </div>
 
